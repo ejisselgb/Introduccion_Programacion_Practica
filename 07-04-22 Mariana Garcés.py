@@ -33,3 +33,46 @@ if numC < numD:
 else:
   div = numC / numD
 print("El resultado de la división es: " , div)
+
+for i in range(1, 100):
+  if i%2 == 0:
+    continue
+  print("El número es impar: ", i)
+
+num1 = float(input("Ingrese número 1: "))
+num2 = float(input("Ingrese número 2: "))
+x=1
+suma = num1 + num2
+while suma < 100:
+  print("Suma " , x , ": " , suma)
+  if num1 >= 40 or num2 >= 40:
+    break
+  x += 1
+  suma += suma
+  if suma>=100:
+    print("Suma " , x , ": " , suma)
+
+num1 = float(input("Ingrese número 1: "))
+num2 = float(input("Ingrese número 2: "))
+x=1
+suma1 = num1 + num2
+suma = suma1
+while suma < 100:
+  print("Suma " , x , ": " , suma)
+  if num1 >= 40 or num2 >= 40:
+    break
+  x += 1
+  suma += suma1
+  if suma>=100:
+    print("Suma " , x , ": " , suma)
+
+cadena = input("Ingrese cadena de texto (más de 5 caracteres) ")
+x=0
+for i in cadena:
+  x += 1
+if x>5:
+  for i in cadena:
+    print(i)
+  print("El tamaño del texto insertado es de " , x , " caracteres")
+else:
+  print("Las palabras insertadas deben ser mayores a 5 caracteres")
